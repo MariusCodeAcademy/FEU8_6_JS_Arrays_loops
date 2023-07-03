@@ -51,4 +51,4 @@ let colors = ['red', 'green', 'blue']
    2. atspausdinti kiekvieno masyvo tipa naujame masyve
    3. atrinkti skaiciu, booleanus ir stringus i atskirus masyvus
 
-Toliau sprendziam [ciklu uzd](ciklai-masyvai.md)
+Toliau sprendziam [ciklu uzd](ciklai-masyvai-uzd.md)
