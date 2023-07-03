@@ -45,4 +45,9 @@ colors = ['red', 'green', 'blue'];
 let colors2 = ['tomato', 'pink', 5];
 
 // sujungti abu masyvu i viena ir atspausdinti su
-// arrray.concat()
+// array.concat()
+
+let sujungta = colors.concat(colors2);
+console.log('sujungta ===', sujungta);
+console.log('colors ===', colors);
+console.log('colors2 ===', colors2);
