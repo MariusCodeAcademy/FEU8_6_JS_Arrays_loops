@@ -3,6 +3,7 @@ console.log('for-array-loop.js file was loaded');
 
 //      idx        0  1   2   3   4  5
 const numsArray = [15, 1, 10, -5, 18, 0];
+const numsArray2 = [4, 1, 1, -15];
 const colors = ['red', 'green', 'blue'];
 console.log('numsArray ===', numsArray);
 
@@ -64,3 +65,50 @@ let posRezul = positivesArr();
 console.log('posRezul ===', posRezul);
 
 // suskaiciuoti kiei yra bendra numsArray suma (su funkcija)
+function getMeTotal(arr) {
+  // psiaudo kodas
+  // sukti cikla per visa masyva
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    // ciklo metu deti visus skaicius i viena bendra
+    let sk = arr[i];
+    total = total + sk;
+    // console.log('tarpine ===', total);
+  }
+  // po ciklu atspausdinti rezulta
+  console.log('total ===', total);
+  return total;
+}
+let tot1 = getMeTotal(numsArray);
+let tot2 = getMeTotal(numsArray2);
+
+getMeTotal([5, 5, 10]);
+console.log('tot1 ===', tot1);
+console.log('tot2 ===', tot2);
+// sukurti funkcija getArrayTotal(arr) kuri apskaiciuoja ir grazina
+// bendra bet kokio masyvo nariu suma
+
+// parasyti funkcija kuri grazina bet kokio masyvo vidurki
+
+// parasyti funkcija kuri grazina teigiamu skaiciu suma
+//      idx             0   1   2   3   4  5
+const numsArrayRand = [15, -1, 10, -5, 15, -5];
+
+/**
+ *
+ * @param {array} arr
+ */
+function getPositivesTotal(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let sk = arr[i];
+    // tikrinti ar teigiamas
+    if (sk > 0) {
+      // jei taip sudedam
+      sum = sum + sk;
+    }
+  }
+  console.log('sum ===', sum);
+  return sum;
+}
+getPositivesTotal(numsArrayRand);
